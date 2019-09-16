@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <!--    <ProgressBar
+
+        android:id="@+id/progressBar"
+        style="@android:style/Widget.DeviceDefault.Light.ProgressBar.Small"
+        android:layout_width="247dp"
+        android:layout_height="251dp"
+        android:indeterminate="false"
+        android:max="100"
+        android:paddingTop="200dp"
+        android:paddingBottom="200dp"
+        android:progress="@string/progress"
+        android:progressDrawable="@drawable/prograss"
+        android:progressTint="#39DD9F"
+        android:rotation="-90"
+
+        android:scrollbars="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />-->
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        style="@android:style/Widget.DeviceDefault.Light.ImageButton"
+        android:layout_width="82dp"
+        android:layout_height="78dp"
+        android:background="@color/background"
+        android:onClick="homeScreen"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/back_arrow" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="237dp"
+        android:layout_height="41dp"
+        android:text="@string/progress"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        tools:layout_editor_absoluteX="86dp"
+        tools:layout_editor_absoluteY="345dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="205dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="365dp" />
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="339dp"
+        android:layout_height="57dp"
+        android:scrollbarSize="130dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="466dp" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="125dp"
+        tools:layout_editor_absoluteY="245dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
